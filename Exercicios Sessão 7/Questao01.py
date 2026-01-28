@@ -3,9 +3,14 @@
 1. Crie um programa que tenha uma função que recebe um parâmetro inteiro e devolve o seu dobro
 
 '''
-def dobro(num):
+
+
+def dobro(num: int):
     return num*2
 
-print(dobro (int(input("digite um numero inteiro"))))
+
+if __name__ == '__main__':
+    valor: int = 4
+print(f"O dobro de {valor} eh {dobro(valor)}")
 
 

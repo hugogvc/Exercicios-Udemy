@@ -4,9 +4,9 @@ Escrever as datas por extenso
 """
 
 
-def extenso():
+def extenso(data: str) -> None:
 
-    data = input("Digite a data no formato dd/mm/aaaa: ")
+   # data = input("Digite a data no formato dd/mm/aaaa: ")
 
     dia, mes, ano = data.split("/")
 
@@ -36,4 +36,5 @@ def extenso():
     
     return resultado  
 
-extenso()
+if __name__ == '__main__':
+    extenso('01/01/2024')
